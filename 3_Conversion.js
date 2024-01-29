@@ -33,3 +33,13 @@ console.log(valueNum1)
 // "33abc" ==> NaN ==> Not a Number
 // true ==>1  false ==> 0
 // "" ==> false
+
+//********** Operation **************
+ let a= 3
+ let value= -a
+//  console.log(a)
+//  console.log(value)
+
+//  console.log(1+"2")
+//  console.log("1"+2)
+//  console.log(1+2+"2") //not a good way to write
