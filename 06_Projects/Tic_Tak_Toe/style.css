@@ -1,0 +1,78 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,'Sans-serif';
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/gradient-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+p{
+    color: white;
+    position: absolute;
+    top: 10%;
+    font-size: 18px;
+    background-color: rgba(255,255, 255, 0.15);
+    border-radius: 10px;
+    padding: 10px;
+    border:1px solid rgba(255,255, 255, 0.25);
+}
+button{
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    right: 47%;
+    background-color: rgba(255,255, 255, 0.15);
+    border:1px solid rgba(255,255, 255, 0.25);
+    /* display: none; */
+    cursor: pointer;
+}
+button.active{
+    display: flex;
+}
+.tictac{
+    width: 90%;
+    max-width: 20rem;
+    padding: 2rem;
+    background-color: rgba(255,255, 255, 0.15);
+    border: 1px solid rgba(255,255, 255, 0.25);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+.box{
+    position: relative;
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1,.box2,.box4,.box5{
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.box3,.box6{
+    border-bottom: 1px solid white;
+}
+.box7,.box8{
+    border-right: 1px solid white;
+}
+
+.win{
+    background-color: green;
+}
